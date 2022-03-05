@@ -1,4 +1,4 @@
-package tools.download
+package tools.janloosmerge
 
 import com.fasterxml.jackson.module.kotlin.readValue
 import jakarta.inject.Singleton
@@ -25,11 +25,11 @@ private val logger = KotlinLogging.logger {}
 
 @Singleton
 @Command(
-    name = "download_data",
-    aliases = ["dd"],
-    description = ["Download modules from patreon links"]
+    name = "jl-merge",
+    aliases = ["jlm"],
+    description = ["Download and merge modules from Jan Loos patreon links"]
 )
-class DownloadData(
+class JanLoosMergeModules(
     private val patreonClient: PatreonClient
 ) : Runnable {
     // Pipe Separated Delimiter file of format:

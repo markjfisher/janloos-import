@@ -18,12 +18,3 @@ val mapper: ObjectMapper = jacksonObjectMapper()
     .registerModule(JavaTimeModule())
     .configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false)
     .apply { setSerializationInclusion(JsonInclude.Include.NON_NULL) }
-
-@Factory
-class JsonCustomizations {
-    @Singleton
-    fun createTimeModule(): JavaTimeModule {
-        logger.info { "Creating JavaTimeModule for mn jackson mapper" }
-        return JavaTimeModule()
-    }
-}

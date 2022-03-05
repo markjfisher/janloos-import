@@ -1,6 +1,13 @@
-# Jan Loos Import
+# VTT Tools
 
-Tools for importing and creating single VTT modules from Jan Loos patreon uploads.
+Tools for doing various VTT stuff.
+
+## `d2a` Directory to Accessories Json
+
+This is a helper
+
+
+## `jlm` Jan Loos Import modules from Jan Loos patreon uploads.
 
 we have our downloads.csv file with values:
 ```<url>|<name>```

@@ -1,4 +1,4 @@
-package tools.download
+package tools.janloosmerge
 
 data class VTTModule(
     val name: String,

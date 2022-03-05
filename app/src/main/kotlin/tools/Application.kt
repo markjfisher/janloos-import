@@ -3,9 +3,9 @@ package tools
 import io.micronaut.configuration.picocli.PicocliRunner
 import org.slf4j.bridge.SLF4JBridgeHandler
 import picocli.CommandLine.Command
-import picocli.CommandLine.Option
 import picocli.CommandLine.ScopeType
-import tools.download.DownloadData
+import tools.dir2accessories.DirToAccessoriesJson
+import tools.janloosmerge.JanLoosMergeModules
 
 @Command(
     name = "tools",
@@ -13,7 +13,8 @@ import tools.download.DownloadData
     mixinStandardHelpOptions = true,
     scope = ScopeType.LOCAL,
     subcommands = [
-        DownloadData::class
+        JanLoosMergeModules::class,
+        DirToAccessoriesJson::class
     ]
 )
 open class Application : Runnable {

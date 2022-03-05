@@ -1,4 +1,4 @@
-rootProject.name = "janloos-import"
+rootProject.name = "vtt-tools"
 
 include(
     "app"
